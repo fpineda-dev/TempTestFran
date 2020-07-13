@@ -74,8 +74,7 @@
         }
 
       },
-      error: function (a, b, c) {
-        //alert('Error');
+      error: function (a, b, c) {        
         swal("Error al cargar las categorias, no existen o estan desactivadas.", {
           className: "red-bg",
         });
@@ -103,7 +102,6 @@
       dataType: "json",     
       success: function (d) {
         //stopLoading();
-
         var _data = "";
 
         for (i in d) {
